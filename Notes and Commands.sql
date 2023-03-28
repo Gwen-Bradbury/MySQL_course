@@ -20,11 +20,22 @@
 
 #you can group by mulitiple columns just add a , and the second column after the first.
 
-#you can find the full list of agregate functions on the MySQL website (docs)
+#you can find the full list of agregate functions on the MySQL website (docs).
 
-#you can find out about the different data types on the MySQL website (docs)
+#you can find out about the different data types on the MySQL website (docs).
+#string types-
 -- varchar() - variable length text up to max length of characters specified in ()
--- int - whole number
+-- char() - has a fixed length of characters specified in ()
+
+#number types-
+-- int (integer)
+-- tinyint 
+-- smallint
+-- mediumint
+-- bigint
+-- all whole numbers
+-- the difference is the min and max signed values - tinyint being the smallest and bigint being the biggest - and the memory each one takes up to store.
+-- decimal - large or small numbers but are always guaranteed to be accurate.
 
 #commands
 #section 3
@@ -97,3 +108,6 @@
 -- SELECT AVG(<column name>) FROM <table name>;
 
 #section 10
+-- SELECT CHAR_LENGTH(<column name>) FROM <table name>;
+-- CREATE TABLE <table name> (<column name> TINYINT UNSIGNED);
+-- DECIMAL(<total number of digits>, <digits after decimal>);
