@@ -16,7 +16,13 @@
 #UPPER is also called UCASE.
 #LOWER is also called LCASE.
 
-#you can find out about the different data types on the MySQL website
+#sub query is a query within another query - the inner query will run first.
+
+#you can group by mulitiple columns just add a , and the second column after the first.
+
+#you can find the full list of agregate functions on the MySQL website (docs)
+
+#you can find out about the different data types on the MySQL website (docs)
 -- varchar() - variable length text up to max length of characters specified in ()
 -- int - whole number
 
@@ -87,3 +93,7 @@
 -- SELECT <column name> FROM <table name> GROUP BY <column name>;
 -- SELECT MIN(<column name>) FROM <table name>;
 -- SELECT MAX(<column name>) FROM <table name>;
+-- SELECT SUM(<column name>) FROM <table name>;
+-- SELECT AVG(<column name>) FROM <table name>;
+
+#section 10
