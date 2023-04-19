@@ -20,13 +20,23 @@
 
 #you can group by mulitiple columns just add a , and the second column after the first.
 
+#store dates as YYYY-MM-DD
+
+#store times as HH:MM:SS
+
+#store datetimes as YYYY-MM-DD HH:MM:SS
+
+#TIMESTAMP takes up less storage space than DATETIME but have a more limited range of dates.
+#DATETIMES are usually used to store DOB, TIMESTAMP is commonly used to store the date/time something was posted/uploaded ect.
+
 #you can find the full list of agregate functions on the MySQL website (docs).
+
+#you can find all the date format code on the MySQL website (docs).
 
 #you can find out about the different data types on the MySQL website (docs).
 #string types-
 -- varchar() - variable length text up to max length of characters specified in ()
 -- char() - has a fixed length of characters specified in ()
-
 #number types-
 -- int (integer)
 -- tinyint 
@@ -111,3 +121,28 @@
 -- SELECT CHAR_LENGTH(<column name>) FROM <table name>;
 -- CREATE TABLE <table name> (<column name> TINYINT UNSIGNED);
 -- DECIMAL(<total number of digits>, <digits after decimal>);
+-- FLOAT
+-- DOUBLE
+-- DATE
+-- TIME
+-- DATETIME
+-- SELECT CURDATE(); - CURRENT_DATE();
+-- SELECT CURTIME(); - CURRENT_TIME();
+-- SELECT NOW(); - CURRENT_TIMESTAMP();
+-- SELECT DAY(<column name>) FROM <table name>;
+-- SELECT DAYOFWEEK(<column name>) FROM <table name>;
+-- SELECT DAYOFYEAR(<column name>) FROM <table name>;
+-- SELECT MONTHNAME(<column name>) FROM <table name>;
+-- SELECT YEAR(<column name>) FROM <table name>;
+-- SELECT HOUR(<column name>) FROM <table name>;
+-- SELECT MINUTE(<column name>) FROM <table name>;
+-- SELECT SECOND(<column name>) FROM <table name>;
+-- SELECT DATE(<column name>) FROM <table name>;
+-- SELECT TIME(<column name>) FROM <table name>;
+-- SELECT DATE_FORMAT(<column name>, '<format code from docs>') FROM <table name>;
+-- SELECT DATEDIFF(<date/CURDATE()/column name>, <column name>) FROM <table name>;
+-- DATE_ADD(<a date/ column name>, INTERVAL <1 day/ 1 year/ 1 month>) FROM <table name>;
+-- DATE_SUB(<a date/ column name>, INTERVAL <1 day/ 1 year/ 1 month>) FROM <table name>;
+-- SELECT TIMEDIFF(<time/CURTIME()/column name>, <time/column name>) FROM <table name>;
+
+#section 11
