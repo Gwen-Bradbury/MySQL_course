@@ -29,7 +29,12 @@
 #TIMESTAMP takes up less storage space than DATETIME but have a more limited range of dates.
 #DATETIMES are usually used to store DOB, TIMESTAMP is commonly used to store the date/time something was posted/uploaded ect.
 
-#you can find the full list of agregate functions on the MySQL website (docs).
+# '=' and '!=' are comparison operators not logical operators although they sometimes may be called logical operators.
+# '<', '<=', '>', '>=', 'LIKE', 'NOT LIKE', 'BETWEEN' are also comparison operators not logical. They compare 2 values.
+
+# 'AND', 'OR' are logical operators.
+
+#you can find the full list of agregate functions on the MySQL website (docs). - agregate functions need a GROUP BY!
 
 #you can find all the date format code on the MySQL website (docs).
 
@@ -109,7 +114,7 @@
 -- %
 -- _
 
-#section 9
+#section 9 - Agregate Functions
 -- SELECT COUNT(*) FROM <table name>;
 -- SELECT <column name> FROM <table name> GROUP BY <column name>;
 -- SELECT MIN(<column name>) FROM <table name>;
@@ -145,4 +150,24 @@
 -- DATE_SUB(<a date/ column name>, INTERVAL <1 day/ 1 year/ 1 month>) FROM <table name>;
 -- SELECT TIMEDIFF(<time/CURTIME()/column name>, <time/column name>) FROM <table name>;
 
-#section 11
+#section 11 - Logical Operators
+-- != 
+-- NOT LIKE
+-- >
+-- <
+-- >=
+-- <=
+-- && - can also use 'AND'
+-- OR
+-- BETWEEN
+-- NOT BETWEEN
+-- SELECT CAST(<insert string/int/ect> AS <insert type>);
+-- IN (<value>, <value>);
+-- NOT IN (<value>, <value>);
+-- % - modulo
+-- CASE WHEN <clause> THEN <clause> ELSE <clause> END
+-- IS NULL
+-- IS NOT NULL
+
+#section 12 - Constraints
+-- UNIQUE
