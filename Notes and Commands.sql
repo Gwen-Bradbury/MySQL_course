@@ -34,6 +34,8 @@
 
 # 'AND', 'OR' are logical operators.
 
+# [] in the docs means optional.
+
 #you can find the full list of agregate functions on the MySQL website (docs). - agregate functions need a GROUP BY!
 
 #you can find all the date format code on the MySQL website (docs).
@@ -61,7 +63,7 @@
 -- SELECT database();
 -- CREATE TABLE <table name> (
 	-- <column name> <data type>,
-	-- 	<column name> <data type>
+	-- <column name> <data type>
 -- );
 -- SHOW TABLES;
 -- SHOW COLUMNS FROM <table name>;
@@ -169,5 +171,17 @@
 -- IS NULL
 -- IS NOT NULL
 
-#section 12 - Constraints
+#section 12 - Constraints and ALTER TABLE
 -- UNIQUE
+-- CHECK (<true or false condition based on column name>)
+-- CONSTRAINT <your name for the constraint> <constraint you want to use>
+-- ALTER TABLE <table name> ADD COLUMN <column name> <type>;
+-- ALTER TABLE <table name> DROP COLUMN <column name>;
+-- RENAME TABLE <table name> TO <new name>; -could also do- ALTER TABLE <table name> RENAME TO <new name>;
+-- ALTER TABLE <table name> RENAME COLUMN <column name> TO <new name>;
+-- ALTER TABLE <table name> MODIFY <column name> <type-varchar/int>;
+-- ALTER TABLE <table name> CHANGE <column name> <new column name> <type>;
+-- ALTER TABLE <table name> ADD CONSTRAINT <constraint name> CHECK (<the check>);
+-- ALTER TABLE <table name> DROP CONSTRAINT <constraint name>; -could also do- ALTER TABLE <table name> DROP CHECK <constraint check>;
+
+#section 13 - One to Many and Joins
