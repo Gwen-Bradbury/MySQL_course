@@ -185,3 +185,12 @@
 -- ALTER TABLE <table name> DROP CONSTRAINT <constraint name>; -could also do- ALTER TABLE <table name> DROP CHECK <constraint check>;
 
 #section 13 - One to Many and Joins
+-- PRIMARY KEY
+-- FOREIGN KEY (<name of column from this table which references the other table>) REFERENCES <table it references>(<column name from table it references>);
+-- JOIN <table name> ON <table name>.<column name> = <corresponding table name>.<corresponding column name>;
+-- LEFT JOIN <table name> ON <table name>.<column name> = <corresponding table name>.<corresponding column name>;
+-- IFNULL(<function>(<column>), <what you replace null with>);
+-- RIGHT JOIN <table name> ON <table name>.<column name> = <corresponding table name>.<corresponding column name>;
+-- ON DELETE CASCADE
+
+#section 14 - Many to Many
