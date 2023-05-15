@@ -194,3 +194,7 @@
 -- ON DELETE CASCADE
 
 #section 14 - Many to Many
+-- YEAR
+-- ROUND(<value you want to round>, <how many decimals you want to round to>)
+
+#section 15
