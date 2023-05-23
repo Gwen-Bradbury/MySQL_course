@@ -1,3 +1,7 @@
+#quit; 
+#mysql -u root -p;
+-- quits and restarts the mysql session.
+
 #always use single quotes around strings. Double quotes can throw an error. Escape ' inside of strings with a \.
 #you can use "" inside ''.
 
@@ -35,6 +39,9 @@
 # 'AND', 'OR' are logical operators.
 
 # [] in the docs means optional.
+
+# Modes are settings that can be turned on and off. They change behaviour and validations of mysql.
+# A full list of settings can be found on the MySQL docs - https://dev.mysql.com/doc/refman/5.7/en/sql-mode.html
 
 #you can find the full list of agregate functions on the MySQL website (docs). - agregate functions need a GROUP BY!
 
@@ -197,4 +204,18 @@
 -- YEAR
 -- ROUND(<value you want to round>, <how many decimals you want to round to>)
 
-#section 15
+#section 15 - Views and Modes
+-- CREATE VIEW <view name> AS <query you want to store>;
+-- CREATE OR REPLACE VIEW <view name> AS <query you want to store>;
+-- ALTER VIEW <view name> AS <updated query you want to store>;
+-- DROP VIEW <view name>;
+-- GROUP BY <column name> HAVING <condtion that the group by needs to filter results>
+-- WITH ROLLUP;
+-- SELECT @@GLOBAL.sql_mode;
+-- SELECT @@SESSION.sql_mode;
+-- SET GLOBAL sql_mode = '<list of modes>';
+-- SET SESSION sql_mode = '<list of modes>';
+-- ONLY_FULL_GROUP_BY
+-- NO_ZERO_IN_DATE 
+-- quit; 
+-- mysql -u root -p;
