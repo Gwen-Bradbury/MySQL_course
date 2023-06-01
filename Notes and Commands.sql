@@ -219,3 +219,18 @@
 -- NO_ZERO_IN_DATE 
 -- quit; 
 -- mysql -u root -p;
+
+#section 16 - Window Functions
+-- OVER()
+-- PARTITION BY <column name>
+-- RANK()
+-- ROW_NUMBER()
+-- DENSE_RANK()
+-- NTILE()
+-- FIRST_VALUE()
+-- LAST_VALUE()
+-- NTH_VALUE(<expression>, <number>)
+-- LEAD()
+-- LAG()
+
+#section 17
