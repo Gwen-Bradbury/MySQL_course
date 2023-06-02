@@ -150,6 +150,7 @@
 -- SELECT DAYOFWEEK(<column name>) FROM <table name>;
 -- SELECT DAYOFYEAR(<column name>) FROM <table name>;
 -- SELECT MONTHNAME(<column name>) FROM <table name>;
+-- SELECT DAYNAME(<column name>) FROM <table name>;
 -- SELECT YEAR(<column name>) FROM <table name>;
 -- SELECT HOUR(<column name>) FROM <table name>;
 -- SELECT MINUTE(<column name>) FROM <table name>;
@@ -235,3 +236,6 @@
 -- NTH_VALUE(<expression>, <number>)
 -- LEAD()
 -- LAG()
+
+#section 18
+-- HAVING
