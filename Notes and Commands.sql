@@ -40,6 +40,9 @@
 
 # [] in the docs means optional.
 
+# using PRIMARY KEY (<id_column> , <id_column>) makes sure you can only make one DB input with both those id combinations.
+# eg PRIMARY KEY(user_id, photo_id) -- makes sure that you can only make one like with that user_id and photo_id combination.
+
 # Modes are settings that can be turned on and off. They change behaviour and validations of mysql.
 # A full list of settings can be found on the MySQL docs - https://dev.mysql.com/doc/refman/5.7/en/sql-mode.html
 
@@ -232,5 +235,3 @@
 -- NTH_VALUE(<expression>, <number>)
 -- LEAD()
 -- LAG()
-
-#section 17
